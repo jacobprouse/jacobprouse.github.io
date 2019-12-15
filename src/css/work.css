@@ -1,0 +1,53 @@
+#work {
+  margin-top: 100px;
+  margin-bottom: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.work-title {
+  font-size: 2rem;
+  white-space: nowrap;
+  color: cornflowerblue;
+}
+
+.work-name {
+  border-right: none;
+  border-left: none;
+  transition: 0.4s;
+  outline: none;
+  white-space: nowrap;
+  border-radius: 0 !important;
+}
+
+.work-tab {
+  padding: 2px;
+  transition: 0.4s;
+  border-left: 1px solid transparent
+}
+
+.work-tab:hover {
+  border-left: 1px solid white;
+}
+
+.work-tab:focus-within {
+  border-left: 1px solid white;
+
+}
+
+.work-name.active {
+  background-color: cornflowerblue;
+  filter: brightness(90%);
+}
+
+.tab-content {
+  word-wrap: break-word;
+  text-align: left;
+  color: white;
+  width:400px;
+}

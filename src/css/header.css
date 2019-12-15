@@ -1,0 +1,40 @@
+.welcome-header {
+  margin-top: 100px;
+  margin-bottom: 400px;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.welcome-title {
+  white-space: nowrap;
+  margin-bottom: 5px;
+  color: white;
+}
+
+#welcome-intro {
+  font-size: 60%;
+  color:cornflowerblue
+}
+
+#welcome-name {
+  font-size: 3.5rem;
+}
+
+#welcome-slog {
+  color:grey;
+  font-size: 3.5rem;
+}
+
+#welcome-descr {
+  color: grey;
+  opacity: 0.8;
+  font-size: medium;
+}

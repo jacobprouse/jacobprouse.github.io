@@ -1,0 +1,101 @@
+#about {
+  margin-top: 100px;
+  margin-bottom: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.about-column {
+  text-align: left;
+}
+
+.about-title {
+  font-size: 2rem;
+  white-space: nowrap;
+  color: cornflowerblue;
+}
+
+.about-text {
+  color: whitesmoke;
+}
+
+.about-pro {
+  color: cornflowerblue;
+}
+
+.about-link {
+  color: cornflowerblue;
+}
+
+#about-profile {
+  display: flex;
+}
+
+.badge-pill {
+  margin-right: 2px;
+  margin-bottom: 1rem;
+}
+
+.profile {
+  margin: auto;
+  height: 20vmin;
+  -webkit-animation: bounce-profile 2s infinite;
+  -webkit-animation-play-state: paused;
+  animation: bounce-profile 2s infinite;
+  animation-play-state: paused; 
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+  transform-origin: bottom;
+  z-index: 1;
+}
+
+.profile:hover{
+  animation-play-state: running;
+  -webkit-animation-play-state: running;
+} 
+
+
+@keyframes bounce-profile {
+  0% {
+      transform: scale(1,1) translateY(0px);
+  }
+  10% {
+      transform: scale(1.1,0.9) translateY(0px);
+  }
+  30% {
+      transform: scale(0.9,1.1) translateY(-10px);
+  }
+  45% {
+      transform: scale(1,1) translateY(0px);
+  }
+  50% {
+      transform: scale(0.95,1) translateY(-2px);
+  }
+  100% {
+      transform: scale(1,1) translateY(0px);
+  }
+}
+
+@-webkit-keyframes bounce-profile {
+  0% {
+      transform: scale(1,1) translateY(0px);
+  }
+  10% {
+      transform: scale(1.1,0.9) translateY(0px);
+  }
+  30% {
+      transform: scale(0.9,1.1) translateY(-10px);
+  }
+  45% {
+      transform: scale(1,1) translateY(0px);
+  }
+  50% {
+      transform: scale(0.95,1) translateY(-2px);
+  }
+  100% {
+      transform: scale(1,1) translateY(0px);
+  }
+}
+
