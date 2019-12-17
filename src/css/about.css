@@ -1,6 +1,6 @@
 #about {
-  margin-top: 100px;
-  margin-bottom: 400px;
+  padding-top: 300px;
+  padding-bottom: 400px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -42,19 +42,22 @@
 .profile {
   margin: auto;
   height: 20vmin;
-  -webkit-animation: bounce-profile 2s infinite;
-  -webkit-animation-play-state: paused;
-  animation: bounce-profile 2s infinite;
-  animation-play-state: paused; 
   animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
-  transform-origin: bottom;
+  animation: bounce-profile 2s linear;
+  -webkit-animation: bounce-profile 2s linear;
+  animation-play-state: paused; 
+  -webkit-animation-play-state: paused;
   z-index: 1;
 }
 
-.profile:hover{
+.profile-animate {
   animation-play-state: running;
   -webkit-animation-play-state: running;
-} 
+}
+
+/* .profile:hover{
+
+}  */
 
 
 @keyframes bounce-profile {

@@ -1,6 +1,6 @@
 .welcome-header {
-  margin-top: 100px;
-  margin-bottom: 400px;
+  padding-top: 300px;
+  padding-bottom: 400px;
   min-height: 50vh;
   display: flex;
   align-items: center;

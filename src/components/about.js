@@ -42,10 +42,30 @@ class About extends React.Component {
  * Image of my face
  */
 class Face extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      hover:false
+    }
+    this.onMouseEnter = this.onMouseEnter.bind(this)
+    this.onAnimationEnd = this.onAnimationEnd.bind(this)
+  }
+  // for when we want the animation to begin
+  onMouseEnter() {
+    this.setState({
+      hover: true
+    })
+  }
+  // for when we want to end the animation
+  onAnimationEnd() {
+    this.setState({
+      hover: false
+    })
+  }
   render() {
     return ( 
       <div id="about-profile">
-        <img src={placeholder} className="profile" alt="Credits: Branden Lee" />
+        <img src={placeholder} onMouseEnter={this.onMouseEnter} onAnimationEnd={this.onAnimationEnd} className={this.state.hover ? 'profile-animate profile':'profile' } alt="Credits: Branden Lee" />
       </div>
     );
   }

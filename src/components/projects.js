@@ -23,22 +23,32 @@ class Project extends React.Component {
  * This section contains all the projects I've done, made up of projects
  */
 class Projects extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      under_construction: true
+    }
+  }
   render() {
     const projectArray = this.props.projects
     const projects = []
     for(let i = 0; i < projectArray.length; i++) {
       projects.push(<Col className="project-column" key={projectArray[i].name}><Project project={projectArray[i]}></Project></Col>);
     }
-    return ( 
-      <div id="projects">
-        <p>My Projects</p>
-        <div className="projects">
-          <Row className="project-container">
-            {projects}
-          </Row>
-        </div> 
-      </div>
-    );
+
+    if(!this.state.under_construction) {
+      return ( 
+        <div id="projects">
+          <p>My Projects</p>
+          <div className="projects">
+            <Row className="project-container">
+              {projects}
+            </Row>
+          </div> 
+        </div>
+      );
+    }
+    else return <div id="projects"><h1 className="construction">Projects: Under Construction</h1></div>
   }
 }
 
