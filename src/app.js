@@ -5,6 +5,7 @@ import Header from './components/header.js'
 import About from './components/about.js'
 import Work from './components/work.js'
 import Projects from './components/projects.js'
+import Contact from './components/contact.js'
 // css files
 import './css/app.css';
 // image assets
@@ -28,6 +29,7 @@ class App extends React.Component{
         <About></About>
         <Work></Work>
         <Projects projects={projectArray}></Projects>
+        <Contact></Contact>
       </div>
     );
   }
