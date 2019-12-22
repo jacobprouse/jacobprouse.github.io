@@ -7,3 +7,7 @@
 .construction {
   color:cornflowerblue;
 }
+
+li::marker {
+  color: cornflowerblue;
+}

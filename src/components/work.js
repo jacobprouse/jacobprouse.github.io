@@ -7,41 +7,45 @@ class Work extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      under_construction: true
+      under_construction: false
     }
   }
   render() {
     if(!this.state.under_construction){
       return(
           <div id="work">
-            <Row>
+            <Row className="work-row">
               <Col className="text-left">
                 <h2 className="work-title">Work Experience</h2>
               </Col>
             </Row>
-            <Tab.Container id="work-tabs" defaultActiveKey="first">
+            <Tab.Container id="work-tabs" defaultActiveKey="vhs">
               <Row>
                 <Col>
                   <Nav variant="pills" className="flex-column">
                     <Nav.Item className="work-tab">
-                      <Nav.Link className="work-name" eventKey="first">VHS</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item className="work-tab">
-                      <Nav.Link className="work-name" eventKey="second">University</Nav.Link>
+                      <Nav.Link className="work-name" eventKey="vhs">Virtual High School</Nav.Link>
                     </Nav.Item>
                   </Nav>
                 </Col>
                 <Col>
                   <Tab.Content className="tab-content">
-                    <Tab.Pane eventKey="first">
-                      <p>
-                        I
-                      </p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                      <p>
-                        bye
-                      </p>
+                    <Tab.Pane eventKey="vhs" show>
+                      <h4 className="work-position">Web Development Student</h4>
+                      <p className="work-position">Summer 2019</p>
+                      <ul>
+                        <li>
+                          Built a Database Asset Management System and participated in Alpha and Beta testing rounds
+                        </li>
+                        <li>
+                          Improved database asset management system search times by 100% by implementing Full Text
+                          search on a MySQL instance and optimizing database queries
+                        </li>
+                        <li>
+                          Performed back-end unit testing using a testing suite of Mocha, Chai, and Sinon
+                        </li>
+                      </ul>
+
                     </Tab.Pane>
                   </Tab.Content>
                 </Col>
