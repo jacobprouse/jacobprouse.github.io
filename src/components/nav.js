@@ -41,7 +41,7 @@ function Header() {
             <Nav.Link href="/#projects">Projects</Nav.Link>
             <Nav.Link href="/#contact">Contact</Nav.Link>
             </Nav>
-            <Button id="portfolio-btn">Portfolio</Button>
+            <Button id="portfolio-btn" href="http://jacobprouse.github.io/personal/src/assets/documents/jacob-prouse-resume.pdf" >Portfolio</Button>
         </Navbar>
         </div>
     );
