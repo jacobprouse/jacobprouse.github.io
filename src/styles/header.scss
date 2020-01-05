@@ -1,6 +1,8 @@
+@import "utilities/variables";
+
 .welcome-header {
-  padding-top: 300px;
-  padding-bottom: 400px;
+  padding-top: 200px;
+  padding-bottom: 300px;
   min-height: 50vh;
   display: flex;
   align-items: center;
@@ -21,7 +23,7 @@
 
 #welcome-intro {
   font-size: 60%;
-  color:cornflowerblue
+  color:$app-color;
 }
 
 #welcome-name {

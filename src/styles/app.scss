@@ -1,0 +1,26 @@
+@import "utilities/variables";
+.app {
+  text-align: center;
+  padding: 10px;
+  background-color: #282c34;
+}
+
+.construction {
+  color:$app-color;
+}
+
+li::marker {
+  color: $app-color;
+}
+
+#contact-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  color: $app-color;
+
+
+  &:hover {
+    color: white;
+    border: 1px solid $app-color;
+  }
+}

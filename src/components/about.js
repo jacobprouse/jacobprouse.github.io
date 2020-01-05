@@ -2,7 +2,7 @@ import React from 'react';
 import placeholder from '../assets/images/placeholder.png'
 import { Row, Col, Badge } from 'react-bootstrap'
 
-import '../css/about.css';
+import '../styles/about.scss';
 
 /**
  * The about me section
@@ -15,7 +15,7 @@ class About extends React.Component {
             <Col className="about-column">
               <h2 className="about-title">About Me</h2>
               <p className="about-text">
-                Hello! I'm Jacob Prouse, a software engineer based in London Ontario. I attend <a className="about-link" href="https://uwo.ca">Western University</a>.
+                Hello! I'm Jacob Prouse, a software engineer based in London Ontario attending <a className="about-link" href="https://uwo.ca">Western University</a>.
                 I build web applications, and do machine learning projects as a hobby.
               </p>
               <p className="about-text">

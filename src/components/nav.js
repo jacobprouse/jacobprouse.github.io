@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import { Navbar, Nav } from 'react-bootstrap';
-import '../css/nav.css';
+import '../styles/nav.scss';
 
 
 function Header() {
@@ -37,7 +37,7 @@ function Header() {
             <Navbar.Collapse id="responsive-navbar-nav"></Navbar.Collapse>
             <Nav ml="auto">
             <Nav.Link href="/#about">About</Nav.Link>
-            <Nav.Link href="/#experience">Experience</Nav.Link>
+            <Nav.Link href="/#work">Experience</Nav.Link>
             <Nav.Link href="/#projects">Projects</Nav.Link>
             <Nav.Link href="/#contact">Contact</Nav.Link>
             </Nav>

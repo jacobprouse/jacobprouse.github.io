@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/work.css';
+import '../styles/work.scss';
 import { Row, Col, Nav, Tab } from 'react-bootstrap';
 
 
@@ -15,7 +15,7 @@ class Work extends React.Component {
       return(
           <div id="work">
             <Row className="work-row">
-              <Col className="text-left">
+              <Col>
                 <h2 className="work-title">Work Experience</h2>
               </Col>
             </Row>
@@ -30,7 +30,7 @@ class Work extends React.Component {
                 </Col>
                 <Col>
                   <Tab.Content className="tab-content">
-                    <Tab.Pane eventKey="vhs" show>
+                    <Tab.Pane eventKey="vhs" show="true">
                       <h4 className="work-position">Web Development Student</h4>
                       <p className="work-position">Summer 2019</p>
                       <ul>

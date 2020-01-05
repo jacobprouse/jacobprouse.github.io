@@ -1,13 +1,11 @@
+@import "utilities/variables";
+
 #work {
-  margin-top: 300px;
-  margin-bottom: 400px;
+  padding-top: 200px;
+  padding-bottom: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.text-left {
-  text-align: left;
 }
 
 .work-row {
@@ -23,7 +21,8 @@
 .work-title {
   font-size: 2rem;
   white-space: nowrap;
-  color: cornflowerblue;
+  color: $app-color;
+  text-align: left;
 }
 
 .work-name {
@@ -36,7 +35,7 @@
 }
 
 .work-tab {
-  padding: 2px;
+  margin: 4px;
   transition: 0.4s;
   border-left: 1px solid transparent
 }
@@ -45,14 +44,20 @@
   border-left: 1px solid white;
 }
 
-.work-tab:focus-within {
-  border-left: 1px solid white;
+.work-name {
+  background-color: white;
+  color: $app-color;
+}
 
+.work-name:hover {
+  background-color: $app-color !important;
+  color: white !important;
+  filter: brightness(70%)
 }
 
 .work-name.active {
-  background-color: cornflowerblue;
-  filter: brightness(90%);
+  background-color: $app-color !important;
+  color: white !important;
 }
 
 .tab-content {

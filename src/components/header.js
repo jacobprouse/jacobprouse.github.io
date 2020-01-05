@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap'
 
-import '../css/header.css';
+import '../styles/header.scss';
 
 
 /** 

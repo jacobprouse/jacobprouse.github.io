@@ -1,6 +1,8 @@
+@import "utilities/variables";
+
 #about {
-  padding-top: 300px;
-  padding-bottom: 400px;
+  padding-top: 200px;
+  padding-bottom: 300px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -14,9 +16,10 @@
 }
 
 .about-title {
+  margin-bottom: 20px;
   font-size: 2rem;
   white-space: nowrap;
-  color: cornflowerblue;
+  color: $app-color;
 }
 
 .about-text {
@@ -24,11 +27,11 @@
 }
 
 .about-pro {
-  color: cornflowerblue;
+  color: $app-color;
 }
 
 .about-link {
-  color: cornflowerblue;
+  color: $app-color;
 }
 
 #about-profile {
