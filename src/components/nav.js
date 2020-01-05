@@ -41,7 +41,7 @@ function Header() {
             <Nav.Link href="/#projects">Projects</Nav.Link>
             <Nav.Link href="/#contact">Contact</Nav.Link>
             </Nav>
-            <a target="_" type="application/pdf" href="src/assets/documents/jacob-prouse-resume.pdf"><Button id="portfolio-btn" >Portfolio</Button></a>
+            <a target="_" type="application/pdf" href="https://github.com/jacobprouse/personal/blob/master/src/assets/documents/resume.pdf"><Button id="portfolio-btn">Resume</Button></a>
         </Navbar>
         </div>
     );
