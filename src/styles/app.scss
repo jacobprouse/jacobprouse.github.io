@@ -24,3 +24,8 @@ li::marker {
     border: 1px solid $app-color;
   }
 }
+
+#portfolio-btn {
+  @extend #contact-btn;
+  margin-left: 0.5rem;
+}

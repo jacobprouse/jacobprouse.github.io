@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import steam from '../assets/images/steam.png';
+import website from '../assets/images/website.png';
 import '../styles/projects.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -18,7 +19,7 @@ class Project extends React.Component {
         <a href={this.props.project.href} target="_">
           <Card className="project">
             <Card.Img variant="top" src={this.props.project.src} className="bordered-image"></Card.Img>
-            <Card.Body>
+            <Card.Body className="project-body">
               <Card.Title className="project-title">{this.props.project.name}</Card.Title>
               <Card.Text className="project-description">
                 {this.props.project.description}
@@ -44,11 +45,8 @@ class Projects extends React.Component {
   render() {
     const projectArray=  [
       // add a new project by the below format, remember to import image file
-      { name:"steam-products", description:"A STEAM PRODUCT", href:"https://github.com/jacobprouse/steam-products", src: steam },
-      { name:"steam-produc", description:"A STEAM PRODUCT", href:"https://github.com/jacobprouse/steam-products", src: steam },
-      { name:"stam-prod22uct", description:"A STEAM PRODUCT", href:"https://github.com/jacobprouse/steam-products", src: steam },
-      { name:"stam-product", description:"A STEAM PRODUCT", href:"https://github.com/jacobprouse/steam-products", src: steam },
-      { name:"stama-product", description:"A STEAM PRODUCT", href:"https://github.com/jacobprouse/steam-products", src: steam }
+      { name:"personal website", description:"The source code for this website, made with React.js and styled with SCSS and Bootstrap.", tags:"React.js SASS", href:"https://github.com/jacobprouse/personal", src: website },
+      { name:"steam-products", description:"A simple tkinter gui that allows you to view the top 10 steam products.", tags:"Python Tkinter BeautifulSoup", href:"https://github.com/jacobprouse/steam-products", src: steam },
     ]
     const projects = []
     for(let i = 0; i < projectArray.length; i++) {

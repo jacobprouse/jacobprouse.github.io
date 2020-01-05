@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
 import '../styles/nav.scss';
 
 
@@ -41,6 +41,7 @@ function Header() {
             <Nav.Link href="/#projects">Projects</Nav.Link>
             <Nav.Link href="/#contact">Contact</Nav.Link>
             </Nav>
+            <Button id="portfolio-btn">Portfolio</Button>
         </Navbar>
         </div>
     );

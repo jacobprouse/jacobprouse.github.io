@@ -45,16 +45,17 @@
 
       .project {
         border: 2px solid $app-color !important;
-        background-color: $app-color !important;
         width: 200px;
         margin: 20px;
-
-        .project-title {
-          color: white;
-        }
-
-        .project-description {
-          color: white;
+        .project-body {
+          background-color: $app-color !important;
+          .project-title {
+            font-weight: bold;
+            color: white;
+          }
+          .project-description {
+            color: whitesmoke;
+          }
         }
       }
     }
