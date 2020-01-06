@@ -36,12 +36,12 @@ function Header() {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav"></Navbar.Collapse>
             <Nav ml="auto">
-            <Nav.Link href="/#about">About</Nav.Link>
-            <Nav.Link href="/#work">Experience</Nav.Link>
-            <Nav.Link href="/#projects">Projects</Nav.Link>
-            <Nav.Link href="/#contact">Contact</Nav.Link>
+                <Nav.Link href="/#about">About</Nav.Link>
+                <Nav.Link href="/#work">Experience</Nav.Link>
+                <Nav.Link href="/#projects">Projects</Nav.Link>
+                <Nav.Link href="/#contact">Contact</Nav.Link>
             </Nav>
-            <a target="_" type="application/pdf" href="https://github.com/jacobprouse/personal/blob/master/src/assets/documents/resume.pdf"><Button id="portfolio-btn">Resume</Button></a>
+            <a target="blank" type="application/pdf" href="/documents/resume.pdf"><Button id="portfolio-btn">Resume</Button></a>
         </Navbar>
         </div>
     );
