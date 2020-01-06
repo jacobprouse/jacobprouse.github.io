@@ -33,7 +33,7 @@ class About extends React.Component {
               </div>
             </Col>
             <Col>
-              <Face href="https://jacobprouse.github.io/personal"></Face>
+              <a href="https://jacobprouse.github.io"><Face></Face></a>
             </Col>
           </Row>
         </div>

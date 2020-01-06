@@ -45,7 +45,7 @@ class Projects extends React.Component {
   render() {
     const projectArray=  [
       // add a new project by the below format, remember to import image file
-      { name:"personal website", description:"The source code for this website, made with React.js and styled with SCSS and Bootstrap.", tags:"React.js SASS", href:"https://github.com/jacobprouse/personal", src: website },
+      { name:"personal website", description:"The source code for this website, made with React.js and styled with SCSS and Bootstrap.", tags:"React.js SASS", href:"https://github.com/jacobprouse/jacobprouse.github.io", src: website },
       { name:"steam-products", description:"A simple tkinter gui that allows you to view the top 10 steam products.", tags:"Python Tkinter BeautifulSoup", href:"https://github.com/jacobprouse/steam-products", src: steam },
     ]
     const projects = []
