@@ -41,7 +41,7 @@ function Header() {
             <Nav.Link href="/#projects">Projects</Nav.Link>
             <Nav.Link href="/#contact">Contact</Nav.Link>
             </Nav>
-            <a target="blank" type="application/pdf" href="documents/resume.pdf"><Button id="portfolio-btn">Resume</Button></a>
+            <a target="blank" type="application/pdf" href="/documents/resume.pdf"><Button id="portfolio-btn">Resume</Button></a>
         </Navbar>
         </div>
     );
