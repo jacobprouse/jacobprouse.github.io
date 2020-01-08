@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/work.scss';
-import { Row, Col, Nav, Tab } from 'react-bootstrap';
+import { Row, Col, Nav, Tab, Container } from 'react-bootstrap';
 
 
 class Work extends React.Component {
@@ -13,7 +13,7 @@ class Work extends React.Component {
   render() {
     if(!this.state.under_construction){
       return(
-          <div id="work">
+          <Container id="work">
             <Row className="work-row">
               <Col>
                 <h2 className="work-title">Work Experience</h2>
@@ -21,7 +21,7 @@ class Work extends React.Component {
             </Row>
             <Tab.Container id="work-tabs" defaultActiveKey="vhs">
               <Row>
-                <Col>
+                <Col xs lg="2">
                   <Nav variant="pills" className="flex-column">
                     <Nav.Item className="work-tab">
                       <Nav.Link className="work-name" eventKey="vhs">Virtual High School</Nav.Link>
@@ -51,7 +51,7 @@ class Work extends React.Component {
                 </Col>
               </Row>
             </Tab.Container>
-          </div>
+          </Container>
       );
     }
     else return <div id="work"><h1 className="construction">Work Experience: Under Construction</h1></div>

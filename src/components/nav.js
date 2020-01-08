@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-import { Navbar, Nav, Button } from 'react-bootstrap';
+import { Navbar, Nav, Button, Form } from 'react-bootstrap';
 import '../styles/nav.scss';
 
 
@@ -27,7 +27,7 @@ function Header() {
     }
     return (
         <div>
-        <Navbar fixed="top" bg="#282c34" variant="dark" id="navbar">
+        <Navbar fixed="top" bg="#282c34" variant="dark" id="navbar" expand="lg">
             <Navbar.Brand href="/#home">Jacob Prouse</Navbar.Brand>
             <div className="icon-container">
               <a href="https://github.com/jacobprouse" target="_" ><FontAwesomeIcon className="social-icon" icon={faGithub} /></a>
@@ -36,12 +36,14 @@ function Header() {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav"></Navbar.Collapse>
             <Nav ml="auto">
-            <Nav.Link href="/#about">About</Nav.Link>
-            <Nav.Link href="/#work">Experience</Nav.Link>
-            <Nav.Link href="/#projects">Projects</Nav.Link>
-            <Nav.Link href="/#contact">Contact</Nav.Link>
+                <Nav.Link href="/#about">About</Nav.Link>
+                <Nav.Link href="/#work">Experience</Nav.Link>
+                <Nav.Link href="/#projects">Projects</Nav.Link>
+                <Nav.Link href="/#contact">Contact</Nav.Link>
+                <Form inline>
+                    <a target="blank" type="application/pdf" href="/documents/resume.pdf"><Button id="portfolio-btn">Resume</Button></a>
+                </Form>
             </Nav>
-            <a target="blank" type="application/pdf" href="/documents/resume.pdf"><Button id="portfolio-btn">Resume</Button></a>
         </Navbar>
         </div>
     );

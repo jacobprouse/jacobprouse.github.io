@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Container } from 'react-bootstrap';
 import steam from '../assets/images/steam.png';
 import website from '../assets/images/website.png';
 import '../styles/projects.scss';
@@ -14,7 +14,7 @@ class Project extends React.Component {
   // const prop = props<Navbar.Brand href="#home">
   render() {
     return ( 
-      <div>
+      <div className="project-wrapper">
         <FontAwesomeIcon className="bin" icon={faGithub} size="10x"></FontAwesomeIcon>
         <a href={this.props.project.href} target="_">
           <Card className="project">
@@ -55,12 +55,12 @@ class Projects extends React.Component {
 
     if(!this.state.under_construction) {
       return ( 
-        <div id="projects">
+        <Container id="projects">
           <p className="projects-title">My Projects</p>
           <div className="project-container">
               {projects}
           </div> 
-        </div>
+        </Container>
       );
     }
     else return <div id="projects"><h1 className="construction">Projects: Under Construction</h1></div>

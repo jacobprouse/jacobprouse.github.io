@@ -3,12 +3,6 @@
 .welcome-header {
   padding-top: 300px;
   padding-bottom: 300px;
-  min-height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .text-left {
@@ -22,8 +16,8 @@
 }
 
 #welcome-intro {
-  font-size: 60%;
   color:$app-color;
+  font-size: 18px;
 }
 
 #welcome-name {
@@ -37,5 +31,5 @@
 
 #welcome-descr {
   color: white;
-  font-size: medium;
+  font-size: 18px;
 }

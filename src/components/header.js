@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Container } from 'react-bootstrap'
 
 import '../styles/header.scss';
 
@@ -10,8 +10,7 @@ import '../styles/header.scss';
 class Header extends React.Component {
   render() {
     return ( 
-      <div>
-        <header id="home" className="welcome-header">
+      <Container id="home" className="welcome-header">
           <Row>
             <Col className="text-left">
               <p id="welcome-intro" className="welcome-title">My name is</p>
@@ -22,8 +21,7 @@ class Header extends React.Component {
               </p>
             </Col>
           </Row>
-        </header>
-      </div>
+      </Container>
     );
   }
 }

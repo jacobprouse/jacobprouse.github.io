@@ -1,23 +1,21 @@
 @import "utilities/variables";
 
 #projects {
-  padding-top: 200px;
+  padding-top: 300px;
   padding-bottom: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
   .projects-title {
     font-size: 2rem;
     text-align: left;
-    // so that it is as wide as the project section
-    width: $projects-per-row * $project-width + ($projects-per-row) * (2*$project-margin) - 2*$project-margin;
     color: $app-color;
   }
-  
+
+  .project-wrapper {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
   .project-container {
-    // so that I can change the amount I want per row, and it adjust
-    width: $projects-per-row * $project-width + ($projects-per-row) * (2*$project-margin); 
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
@@ -39,6 +37,7 @@
       background-color: transparent !important;
       color: currentColor;
       transition: 0.3s ease;
+
       &:hover {
         opacity: 0.1;
       }
@@ -46,7 +45,6 @@
       .project {
         border: 2px solid $app-color !important;
         width: 200px;
-        margin: 20px;
         .project-body {
           background-color: $app-color !important;
           .project-title {

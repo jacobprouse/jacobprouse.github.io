@@ -1,6 +1,6 @@
 import React from 'react';
 import placeholder from '../assets/images/placeholder.png'
-import { Row, Col, Badge } from 'react-bootstrap'
+import { Row, Col, Badge, Container } from 'react-bootstrap'
 
 import '../styles/about.scss';
 
@@ -10,7 +10,7 @@ import '../styles/about.scss';
 class About extends React.Component {
     render() {
       return ( 
-        <div id="about">
+        <Container id="about">
           <Row>
             <Col className="about-column">
               <h2 className="about-title">About Me</h2>
@@ -36,7 +36,7 @@ class About extends React.Component {
               <a href="https://jacobprouse.github.io"><Face></Face></a>
             </Col>
           </Row>
-        </div>
+        </Container>
       );
     }
   }
