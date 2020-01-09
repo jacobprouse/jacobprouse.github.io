@@ -17,7 +17,7 @@ class Project extends React.Component {
       <div className="project-wrapper">
         <FontAwesomeIcon className="bin" icon={faGithub} size="10x"></FontAwesomeIcon>
         <a href={this.props.project.href} target="_">
-          <Card className="project">
+          <Card className="project col-md-15">
             <Card.Img variant="top" src={this.props.project.src} className="bordered-image"></Card.Img>
             <Card.Body className="project-body">
               <Card.Title className="project-title">{this.props.project.name}</Card.Title>

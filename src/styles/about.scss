@@ -1,4 +1,5 @@
 @import "utilities/variables";
+@import "bootstrap";
 
 #about {
   padding-top: 200px;
@@ -30,12 +31,19 @@
 }
 
 .badge-pill {
-  margin-right: 2px;
+  margin-right: 5px;
   margin-bottom: 1rem;
+  border: 1px solid $app-color;
+  background-color: transparent !important;
+  color: white !important;
 }
 
 .profile {
   height: 200px;
+}
+
+.profile-link {
+  outline: none;
 }
 
 .profile-animate {

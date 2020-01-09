@@ -1,5 +1,5 @@
 import React from 'react';
-import placeholder from '../assets/images/placeholder.png'
+import face from '../assets/images/face.png'
 import { Row, Col, Badge, Container } from 'react-bootstrap'
 
 import '../styles/about.scss';
@@ -33,7 +33,7 @@ class About extends React.Component {
               </div>
             </Col>
             <Col>
-              <a href="https://jacobprouse.github.io"><Face></Face></a>
+              <Face></Face>
             </Col>
           </Row>
         </Container>
@@ -68,7 +68,7 @@ class Face extends React.Component {
   render() {
     return ( 
       <div id="about-profile">
-        <img src={placeholder} onMouseEnter={this.onMouseEnter} onAnimationEnd={this.onAnimationEnd} className={this.state.hover ? 'profile-animate profile':'profile' } alt="Credits: Branden Lee" />
+        <img src={face} onMouseEnter={this.onMouseEnter} onAnimationEnd={this.onAnimationEnd} className={this.state.hover ? 'profile-animate profile':'profile' } alt="Credits: Branden Lee" />
       </div>
     );
   }
