@@ -11,12 +11,17 @@
     text-align: left;
 
     .contact-title {
-      font-size: 2rem;
+      font-size: $large;
       color: $app-color;
     }
   
     .contact-description {
       color: white;
+      font-size: $medium
+    }
+
+    #contact-btn {
+      font-size: $medium;
     }
   }
 }

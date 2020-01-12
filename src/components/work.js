@@ -21,7 +21,7 @@ class Work extends React.Component {
             </Row>
             <Tab.Container id="work-tabs" defaultActiveKey="vhs">
               <Row>
-                <Col xs lg="2">
+                <Col xs lg="3">
                   <Nav variant="pills" className="flex-column">
                     <Nav.Item className="work-tab">
                       <Nav.Link className="work-name" eventKey="vhs">Virtual High School</Nav.Link>
@@ -32,7 +32,7 @@ class Work extends React.Component {
                   <Tab.Content className="tab-content">
                     <Tab.Pane eventKey="vhs" show="true">
                       <h4 className="work-position">Web Development Student</h4>
-                      <p className="work-position">Summer 2019</p>
+                      <p className="work-position-date">Summer 2019</p>
                       <ul>
                         <li>
                           Built a Database Asset Management System and participated in Alpha and Beta testing rounds

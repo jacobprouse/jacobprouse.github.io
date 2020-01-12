@@ -3,23 +3,25 @@
 
 #about {
   padding-top: 200px;
-  padding-bottom: 300px;
+  padding-bottom: 200px;
   text-align: left;
 }
 
 .about-title {
   margin-bottom: 20px;
-  font-size: 2rem;
+  font-size: 60px;
   white-space: nowrap;
   color: $app-color;
 }
 
 .about-text {
   color: white;
+  font-size: $medium;
 }
 
 .about-pro {
   color: $app-color;
+  font-size: $medium;
 }
 
 .about-link {
@@ -30,12 +32,13 @@
   align-content: center;
 }
 
-.badge-pill {
+.badge-tech {
   margin-right: 5px;
   margin-bottom: 1rem;
   border: 1px solid $app-color;
   background-color: transparent !important;
   color: white !important;
+  font-size: $medium !important;
 }
 
 .profile {

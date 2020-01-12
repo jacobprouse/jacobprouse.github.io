@@ -2,28 +2,25 @@
 
 #work {
   padding-top: 200px;
-  padding-bottom: 300px;
+  padding-bottom: 200px;
 }
 
 .work-position {
-  text-shadow: 1px 1px cornflowerblue;
+  text-decoration: underline $app-color;
+  font-size: $medium;
+  padding-left: 20px;
+}
+
+.work-position-date {
+  font-size: $small;
   padding-left: 20px;
 }
 
 .work-title {
-  font-size: 2rem;
+  font-size: $large;
   white-space: nowrap;
   color: $app-color;
   text-align: left;
-}
-
-.work-name {
-  border-right: none;
-  border-left: none;
-  transition: 0.4s;
-  outline: none;
-  white-space: nowrap;
-  border-radius: 0 !important;
 }
 
 .work-tab {
@@ -39,6 +36,13 @@
 .work-name {
   background-color: white;
   color: $app-color;
+  border-right: none;
+  font-size: $small;
+  border-left: none;
+  transition: 0.4s;
+  outline: none;
+  white-space: nowrap;
+  border-radius: 0 !important;
 }
 
 .work-name:hover {
@@ -54,6 +58,7 @@
 
 .tab-content {
   word-wrap: break-word;
+  font-size: $medium;
   text-align: left;
   color: white;
 }

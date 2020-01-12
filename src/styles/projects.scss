@@ -1,11 +1,11 @@
 @import "utilities/variables";
 
 #projects {
-  padding-top: 300px;
-  padding-bottom: 300px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
   .projects-title {
-    font-size: 2rem;
+    font-size: $large;
     text-align: left;
     color: $app-color;
   }
@@ -44,15 +44,17 @@
 
       .project {
         border: 2px solid $app-color !important;
-        width: 200px;
+        width: 300px;
         .project-body {
           background-color: $app-color !important;
           .project-title {
             font-weight: bold;
+            font-size: $medium;
             color: white;
           }
           .project-description {
             color: whitesmoke;
+            font-size: $small;
           }
         }
       }
