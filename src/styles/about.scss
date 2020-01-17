@@ -42,7 +42,7 @@
 }
 
 .profile {
-  height: 200px;
+  width: 400px;
 }
 
 .profile-link {
@@ -51,8 +51,8 @@
 
 .profile-animate {
   animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
-  animation: bounce-profile 2s linear;
-  -webkit-animation: bounce-profile 2s linear;
+  animation: bounce-profile 1.5s linear;
+  -webkit-animation: bounce-profile 1.5s linear;
 }
 
 @keyframes bounce-profile {
@@ -60,7 +60,7 @@
       transform: scale(1,1) translateY(0px);
   }
   10% {
-      transform: scale(1.1,0.9) translateY(0px);
+      transform: scale(1,0.9) translateY(0px);
   }
   30% {
       transform: scale(0.9,1.1) translateY(-10px);

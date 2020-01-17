@@ -1,5 +1,5 @@
 import React from 'react';
-import face from '../assets/images/face.png'
+import face from '../assets/images/profile.png'
 import { Row, Col, Badge, Container } from 'react-bootstrap'
 
 import '../styles/about.scss';
@@ -32,7 +32,7 @@ class About extends React.Component {
                 <Badge pill className="badge-tech" variant="light">Docker</Badge>
               </div>
             </Col>
-            <Col lg="2">
+            <Col lg="4">
               <Face></Face>
             </Col>
           </Row>
