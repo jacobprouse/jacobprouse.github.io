@@ -1,13 +1,13 @@
 // Across Project Variables 
 $app-color: #6495ed;
-
+$section-margin: 30vh;
 // Section: Projects
 $project-width: 200px;
-$project-margin: 20px;
-$projects-per-row: 3;
+
+
 
 // front size
-$small: 1.25rem;
-$medium: 1.875rem;
-$large: 3.75rem
+$large: calc(20px + 1.6vw);
+$medium: calc(15px + 1vw);
+$small: calc(10px + 1vw);
 

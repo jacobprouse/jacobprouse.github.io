@@ -35,16 +35,17 @@ class NavBar extends React.Component {
                     <a href="https://linkedin.com/in/jacobprouse" target="_" className="social-icon"><FontAwesomeIcon className="social-icon" icon={faLinkedin} /></a>
                     </div>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav"></Navbar.Collapse>
-                    <Nav ml="auto">
-                        <Nav.Link href="/#about">About</Nav.Link>
-                        <Nav.Link href="/#work">Experience</Nav.Link>
-                        <Nav.Link href="/#projects">Projects</Nav.Link>
-                        <Nav.Link href="/#contact">Contact</Nav.Link>
-                        <Form inline>
-                            <a target="blank" type="application/pdf" href="/documents/resume.pdf"><Button id="portfolio-btn">Resume</Button></a>
-                        </Form>
-                    </Nav>
+                    <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+                        <Nav>
+                            <Nav.Link href="/#about">About</Nav.Link>
+                            <Nav.Link href="/#work">Experience</Nav.Link>
+                            <Nav.Link href="/#projects">Projects</Nav.Link>
+                            <Nav.Link href="/#contact">Contact</Nav.Link>
+                            <Form inline>
+                                <a target="blank" type="application/pdf" href="/documents/resume.pdf"><Button id="portfolio-btn">Resume</Button></a>
+                            </Form>
+                        </Nav>
+                    </Navbar.Collapse>
                 </Navbar>
             </div>
         );

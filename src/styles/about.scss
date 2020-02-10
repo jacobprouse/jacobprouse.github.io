@@ -2,14 +2,14 @@
 @import "bootstrap";
 
 #about {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 10.48vh;
+  padding-bottom: 10.48vh;
   text-align: left;
 }
 
 .about-title {
   margin-bottom: 20px;
-  font-size: 60px;
+  font-size: $large;
   white-space: nowrap;
   color: $app-color;
 }
@@ -28,10 +28,6 @@
   color: $app-color;
 }
 
-#about-profile {
-  align-content: center;
-}
-
 .badge-tech {
   margin-right: 5px;
   margin-bottom: 1rem;
@@ -41,59 +37,7 @@
   font-size: $medium !important;
 }
 
-.profile {
-  width: 400px;
-}
-
 .profile-link {
   outline: none;
-}
-
-.profile-animate {
-  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
-  animation: bounce-profile 1.5s linear;
-  -webkit-animation: bounce-profile 1.5s linear;
-}
-
-@keyframes bounce-profile {
-  0% {
-      transform: scale(1,1) translateY(0px);
-  }
-  10% {
-      transform: scale(1,0.9) translateY(0px);
-  }
-  30% {
-      transform: scale(0.9,1.1) translateY(-10px);
-  }
-  45% {
-      transform: scale(1,1) translateY(0px);
-  }
-  50% {
-      transform: scale(0.95,1) translateY(-2px);
-  }
-  100% {
-      transform: scale(1,1) translateY(0px);
-  }
-}
-
-@-webkit-keyframes bounce-profile {
-  0% {
-      transform: scale(1,1) translateY(0px);
-  }
-  10% {
-      transform: scale(1.1,0.9) translateY(0px);
-  }
-  30% {
-      transform: scale(0.9,1.1) translateY(-10px);
-  }
-  45% {
-      transform: scale(1,1) translateY(0px);
-  }
-  50% {
-      transform: scale(0.95,1) translateY(-2px);
-  }
-  100% {
-      transform: scale(1,1) translateY(0px);
-  }
 }
 

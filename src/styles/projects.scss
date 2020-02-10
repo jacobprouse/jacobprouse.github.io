@@ -1,8 +1,8 @@
 @import "utilities/variables";
 
 #projects {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: $section-margin;
+  padding-bottom: $section-margin;
 
   .projects-title {
     font-size: $large;
@@ -13,6 +13,9 @@
   .project-wrapper {
     margin-right: 20px;
     margin-bottom: 20px;
+    width: auto;
+    max-width: 300px;
+    height: auto;
   }
 
   .project-container {
@@ -20,6 +23,7 @@
     flex-wrap: wrap;
     justify-content: left;
     vertical-align: middle;
+    // the github logo
     .bin {
       position: absolute;
       transition: 0.3s ease;
@@ -27,24 +31,27 @@
       -ms-transform: translate(-50%, 50%);
       color:white;
       text-align: center;
+      width: auto;
+      max-width:200px;
+      height: auto;
       &:hover {
         opacity: 1;
       }
     }
     a {
-      // backface-visibility: hidden;
+      backface-visibility: hidden;
       text-decoration: none;
       background-color: transparent !important;
       color: currentColor;
       transition: 0.3s ease;
-
       &:hover {
         opacity: 0.1;
       }
-
       .project {
         border: 2px solid $app-color !important;
-        width: 300px;
+        // width: auto;
+        // max-width: 300px;
+        // height: auto;
         .project-body {
           background-color: $app-color !important;
           .project-title {
@@ -54,7 +61,7 @@
           }
           .project-description {
             color: whitesmoke;
-            font-size: $small;
+            font-size: $medium;
           }
         }
       }

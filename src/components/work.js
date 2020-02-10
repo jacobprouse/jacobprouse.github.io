@@ -21,7 +21,7 @@ class Work extends React.Component {
             </Row>
             <Tab.Container id="work-tabs" defaultActiveKey="vhs">
               <Row>
-                <Col xs lg="3">
+                <Col lg="3">
                   <Nav variant="pills" className="flex-column">
                     <Nav.Item className="work-tab">
                       <Nav.Link className="work-name" eventKey="vhs">Virtual High School</Nav.Link>

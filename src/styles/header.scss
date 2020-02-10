@@ -1,12 +1,13 @@
 @import "utilities/variables";
 
 .welcome-header {
-  padding-top: 300px;
-  padding-bottom: 300px;
+  padding-top: $section-margin;
+  padding-bottom: $section-margin;
 }
 
-.text-left {
+.header-align {
   text-align: left;
+  align-self: center;
 }
 
 .welcome-title {
@@ -17,19 +18,74 @@
 
 #welcome-intro {
   color:$app-color;
-  font-size: 30px;
+  font-size: $medium;
 }
 
 #welcome-name {
-  font-size: 60px;
+  font-size: $large;
 }
 
 #welcome-slog {
   color:$app-color;
-  font-size: 60px;
+  font-size: $large;
 }
 
 #welcome-descr {
   color: white;
-  font-size: 30px;
+  font-size: $medium;
+}
+
+.profile {
+  width: auto;
+  max-width: 100%;
+  justify-self: left;
+  height: auto;
+}
+
+.profile-animate {
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+  animation: bounce-profile 1.5s linear;
+  -webkit-animation: bounce-profile 1.5s linear;
+}
+
+@keyframes bounce-profile {
+  0% {
+      transform: scale(1,1) translateY(0px);
+  }
+  10% {
+      transform: scale(1,0.9) translateY(0px);
+  }
+  30% {
+      transform: scale(0.9,1.1) translateY(-10px);
+  }
+  45% {
+      transform: scale(1,1) translateY(0px);
+  }
+  50% {
+      transform: scale(0.95,1) translateY(-2px);
+  }
+  100% {
+      transform: scale(1,1) translateY(0px);
+  }
+}
+
+@-webkit-keyframes bounce-profile {
+  0% {
+      transform: scale(1,1) translateY(0px);
+  }
+  10% {
+      transform: scale(1.1,0.9) translateY(0px);
+  }
+  30% {
+      transform: scale(0.9,1.1) translateY(-10px);
+  }
+  45% {
+      transform: scale(1,1) translateY(0px);
+  }
+  50% {
+      transform: scale(0.95,1) translateY(-2px);
+  }
+  100% {
+      transform: scale(1,1) translateY(0px);
+  }
 }
