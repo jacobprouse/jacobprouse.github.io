@@ -48,7 +48,7 @@ class Projects extends React.Component {
       // add a new project by the below format, remember to import image file
       { name:"linear regression", description:"An example of using linear, and polynomial regression in Python without using libraries. Explores the benefits of k-fold cross validation.", tags:"Topics: Machine Learning, Python", href:"https://github.com/jacobprouse/linear_and_polynomial_regression", src: linear },
       { name:"personal website", description:"The source code for this website, made with React.js and styled with SCSS and Bootstrap.", tags:"Topics: React.js, SASS", href:"https://github.com/jacobprouse/jacobprouse.github.io", src: website },
-      { name:"steam-products", description:"A program that displays the top 10 games on Steam using a web scraper written with Beautiful Soup.", tags:"Topics: Python, Tkinter, BeautifulSoup", href:"https://github.com/jacobprouse/steam-products", src: steam },
+      { name:"steam products", description:"A program that displays the top 10 games on Steam using a web scraper written with Beautiful Soup.", tags:"Topics: Python, Tkinter, BeautifulSoup", href:"https://github.com/jacobprouse/steam-products", src: steam },
     ]
     const projects = []
     for(let i = 0; i < projectArray.length; i++) {

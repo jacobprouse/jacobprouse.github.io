@@ -56,12 +56,15 @@
           background-color: $app-color !important;
           .project-title {
             font-weight: bold;
+            text-align: center;
             font-size: $medium;
             color: white;
           }
           .project-description {
+            text-align: left;
+            hyphens: auto;
             color: whitesmoke;
-            font-size: $medium;
+            font-size: $small;
           }
         }
       }
